@@ -1,3 +1,4 @@
+
 name: Require Linked Issue
 
 # Ensure every pull request is linked to a REAL GitHub issue in this repo.
@@ -9,9 +10,8 @@ name: Require Linked Issue
 # existing issue (not a pull request) in this repository.
 
 on:
-  pull_request:
-    types: [opened, edited, reopened, synchronize, ready_for_review]
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: read
   pull-requests: read
